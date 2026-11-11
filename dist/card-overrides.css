@@ -1,0 +1,140 @@
+.section-head > p {
+  color: #182235;
+  font-weight: 800;
+}
+
+/* Названия и описания услуг в тарифных таблицах */
+.tariff-table:not(.route-table) td:nth-child(2) {
+  color: #182235;
+  font-weight: 700;
+}
+
+.footer-grid a.footer-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 8px;
+  padding: 0 22px;
+  border-radius: 9px;
+  background: #25d366;
+  color: #062b17;
+  font-weight: 800;
+}
+
+.footer-grid a.footer-whatsapp:hover {
+  background: #35e477;
+  color: #062b17;
+}
+
+/* Более насыщенный текст навигации и футера без изменения цветов */
+.desktop-nav a,
+.mobile-menu a,
+.footer h3,
+.footer-grid > div > p,
+.footer-grid a:not(.brand),
+.footer-bottom {
+  font-weight: 800;
+}
+
+.service-copy {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.service-card,
+.service-card:hover {
+  min-height: 468px;
+  background-size: 100% auto;
+  background-position: center top;
+  background-color: #17202d;
+}
+
+.service-card::before {
+  background: linear-gradient(180deg, rgba(4, 17, 38, 0) 35%, rgba(4, 17, 38, .32) 54%, rgba(4, 17, 38, .96) 72%);
+}
+
+.service-card .service-copy h3 {
+  margin: 0 0 11px;
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(2, 10, 24, .75);
+}
+
+.service-details {
+  min-height: 158px;
+  padding: 17px 65px 17px 18px;
+  border: 1px solid rgba(255, 255, 255, .27);
+  border-radius: 15px;
+  background: rgba(62, 68, 76, .58);
+  box-shadow: 0 14px 34px rgba(3, 12, 26, .24);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.service-card .service-details p,
+.service-featured .service-details p {
+  margin: 0;
+  max-width: none;
+  color: rgba(255, 255, 255, .82);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.service-card .service-details .price-tag {
+  margin-top: 13px;
+}
+
+@media (max-width: 720px) {
+  .service-card,
+  .service-card:hover {
+    min-height: 450px;
+    background-size: 100% auto;
+  }
+
+  .service-details {
+    min-height: 152px;
+    padding-left: 16px;
+  }
+}
+
+.section {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.prices {
+  padding-bottom: 72px;
+}
+
+.faq {
+  padding-top: 78px;
+  padding-bottom: 76px;
+}
+
+.cta-section {
+  padding-bottom: 72px;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+
+  .prices {
+    padding-bottom: 56px;
+  }
+
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
+
+  .cta-section {
+    padding-bottom: 56px;
+  }
+}
