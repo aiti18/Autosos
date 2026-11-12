@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://autosos312.aitenirtoktomamatov.chatgpt.site/sitemap.xml
+
+Sitemap: https://autosos312.kg/sitemap.xml
