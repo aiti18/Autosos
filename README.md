@@ -19,4 +19,4 @@ python3 -m http.server 4173 --directory dist
 - `dist/script.js` — интерактивность и отправка заявки в WhatsApp;
 - `dist/assets/photos/` — изображения услуг.
 
-Публичная версия: https://autosos312.aitenirtoktomamatov.chatgpt.site
+Публичная версия: https://autosos312.kg/
