@@ -578,3 +578,122 @@ textarea {
     transform: none;
   }
 }
+
+/* Компактные тарифы: на телефоне оставляем только важные данные */
+@media (max-width: 720px) {
+  .dialog-close {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    line-height: 1;
+    color: var(--ink);
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .dialog-close:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+  }
+
+  .faq-item button,
+  .faq-answer p {
+    color: #263b58;
+  }
+
+  .roadside-table,
+  .driver-table,
+  .route-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .roadside-table th:first-child,
+  .roadside-table td:first-child {
+    display: none;
+  }
+
+  .driver-table th:nth-child(2),
+  .driver-table td:nth-child(2) {
+    display: none;
+  }
+
+  .roadside-table th:last-child,
+  .roadside-table td:last-child,
+  .driver-table th:last-child,
+  .driver-table td:last-child {
+    width: 92px;
+    white-space: nowrap;
+  }
+
+  .tariff-table-wrap {
+    max-width: 100%;
+    margin-right: 0;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .roadside-table th,
+  .driver-table th {
+    padding: 11px 14px;
+  }
+
+  .roadside-table td,
+  .driver-table td {
+    padding: 12px 14px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .route-table th,
+  .route-table td {
+    padding: 10px 8px;
+    font-size: 10px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .route-table th:first-child,
+  .route-table td:first-child {
+    width: 42%;
+  }
+
+  .route-table th:nth-child(2),
+  .route-table td:nth-child(2),
+  .route-table th:nth-child(3),
+  .route-table td:nth-child(3) {
+    width: 29%;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 380px) {
+  .roadside-table th,
+  .driver-table th {
+    padding: 10px 11px;
+    font-size: 8px;
+  }
+
+  .roadside-table td,
+  .driver-table td {
+    padding: 11px;
+    font-size: 11px;
+  }
+
+  .roadside-table th:last-child,
+  .roadside-table td:last-child,
+  .driver-table th:last-child,
+  .driver-table td:last-child {
+    width: 82px;
+  }
+
+  .route-table th {
+    font-size: 8px;
+  }
+
+  .route-table td {
+    font-size: 9px;
+  }
+}
