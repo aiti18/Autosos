@@ -659,11 +659,23 @@
 
   .service-photo,
   .service-photo img {
-    min-height: 420px;
+    min-height: 0;
   }
 
   .service-photo {
     border-radius: 23px;
+    background: var(--navy);
+  }
+
+  .service-photo::after {
+    display: none;
+  }
+
+  .service-photo img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    object-position: center;
   }
 
   .service-floating-price {
@@ -672,10 +684,13 @@
   }
 
   .service-photo-caption {
-    left: 14px;
-    right: 14px;
-    bottom: 14px;
-    grid-template-columns: 1fr;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 12px;
+    background: var(--navy);
   }
 
   .service-photo-caption div {
@@ -731,7 +746,7 @@
 @media (max-width: 440px) {
   .service-photo,
   .service-photo img {
-    min-height: 380px;
+    min-height: 0;
   }
 
   .service-floating-price {
@@ -746,6 +761,12 @@
   .service-section-heading h2,
   .service-detail-copy h2 {
     font-size: 34px;
+  }
+}
+
+@media (max-width: 360px) {
+  .service-photo-caption {
+    grid-template-columns: 1fr;
   }
 }
 
