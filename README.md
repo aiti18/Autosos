@@ -13,9 +13,12 @@ python3 -m http.server 4173 --directory dist
 ## Структура
 
 - `dist/index.html` — разметка сайта;
+- `dist/trezvyy-voditel.html` — страница услуги «Трезвый водитель»;
+- `dist/dostavka-benzina.html` — страница доставки топлива;
 - `dist/styles.css` — основные стили;
 - `dist/card-overrides.css` — стили карточек и точечные переопределения;
 - `dist/responsive.css` — адаптивные стили;
+- `dist/service-pages.css` — общие стили страниц услуг;
 - `dist/script.js` — интерактивность и отправка заявки в WhatsApp;
 - `dist/assets/photos/` — изображения услуг.
 
